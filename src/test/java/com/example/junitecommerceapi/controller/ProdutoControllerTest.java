@@ -46,7 +46,7 @@ public class ProdutoControllerTest {
             ).andDo(print()).
             andExpect(status().isCreated());
         
-        Optional<Produto> produOptional = produtoRepository.findById(3l);
+        Optional<Produto> produOptional = produtoRepository.findById(6l);
 
         assertNotNull(produOptional);
         assertEquals("Caneta Amarela", produOptional.get().getNome());
